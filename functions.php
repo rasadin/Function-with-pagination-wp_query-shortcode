@@ -74,3 +74,5 @@ function publications_with_country_name($atts){
 	return $return_html;
 }
 add_shortcode('publications_with_country_name_shortcode', 'publications_with_country_name');
+
+<!-- ex: [publications_with_country_name_shortcode jurisdiction="Thailand"] -->
