@@ -5,7 +5,8 @@ function publications_with_country_name($atts){
 
 	$the_query = new WP_Query( array(
 	'post_type' => 'publications',
-	// 'posts_per_page' => -1,
+<!-- 	'posts_per_page' => 1,
+    	'paged' =>  get_query_var( 'paged' ), -->
 	'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
 	'meta_query'    => array(
 		array(
